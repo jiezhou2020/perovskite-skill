@@ -1,0 +1,3 @@
+- [User is a perovskite physics researcher](user_researcher.md) — mechanism decomposition + equipment-improvement framing, Chinese default
+- [Perovskite bandgap blue-shift decoupling project](project_perovskite_blueshift.md) — active research plan, Phase 1-2 literature done, mechanisms A/B(B1+B2)/C identified
+- [Prefer scannable reports with bottom-line-up-front](feedback_report_format.md) — blockquote takeaways, small tables, one idea per paragraph, no nested bullets
