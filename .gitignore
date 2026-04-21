@@ -1,4 +1,4 @@
-*.pdf
+papers/**/*.pdf
 *.txt
 downloads/
 .claude/
