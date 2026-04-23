@@ -1,11 +1,11 @@
 ---
 folder: dir1_blueshift_decoupling
 topic: 蓝移 / 热膨胀 / 晶格畸变 / 电-声耦合解耦
-count: 15
-last_updated: 2026-04-21
+count: 16
+last_updated: 2026-04-23
 ---
 
-# dir1 · 蓝移解耦 · 15 篇一览
+# dir1 · 蓝移解耦 · 16 篇一览
 
 > 方向 1 覆盖五个子通道：**A 热膨胀 / B1 八面体倾转 / B2 B 位偏心 / C_linear Fröhlich / C_nonlinear 多声子**。本文件夹按作者字母排序，深读完成的论文有 ✓ 并链到 `../analysis/`。
 
@@ -28,6 +28,7 @@ last_updated: 2026-04-21
 | 13 | Yang_2017 | **第一性 AHC 计算给出 EPI 主导 MAPbI3 蓝移**（与 FranciscoLopez 实验反号） | 300→400 K EPI +86 meV (CBM −30 + VBM −116)；总 ΔEg 146 meV | ✓ [报告](../../analysis/dir1_yang2017.md) |
 | 14 | Zhang_2023 | 相稳定 MA0.3FA0.7PbI3 薄膜的反常蓝移由静态 vs 动态畸变竞争主导 | 反常蓝移幅度（未深读细节）；in-situ 高压 PL 量化 | — |
 | 15 | Zhao_2019 | CsPbI3 纳米晶的尺寸依赖晶格结构与限域带隙调制 | 尺寸 5–12 nm；晶格参数差异（未深读） | — |
+| 16 | Jin_2022 | **钙钛矿晶格应变弛豫综述：应变来源→八面体倾转/键长角度→光电性能与稳定性关联** | FA⁺ 过大引起八面体畸变；α/β/γ 相转变；应变工程设计原则 | — |
 
 ## 核心矛盾与未解问题
 

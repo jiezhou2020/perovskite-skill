@@ -11,9 +11,9 @@ date: 2026-04-21
 
 ```
 papers/
-├── dir1_blueshift_decoupling/       (15 篇)  方向1：蓝移/EPC/畸变解耦
-├── dir2_phase_segregation/          ( 5 篇)  方向2：相分离
-├── dir3_ion_migration/              (10 篇)  方向3：离子迁移
+├── dir1_blueshift_decoupling/       (16 篇)  方向1：蓝移/EPC/畸变解耦
+├── dir2_phase_segregation/          ( 6 篇)  方向2：相分离
+├── dir3_ion_migration/              (11 篇)  方向3：离子迁移
 ├── related_crossmaterial_instruments/ ( 4 篇)  跨材料 + 设备改良参考
 ├── other_reviews_tandem/            (10 篇)  综述/tandem/通用
 └── README.md                        本文件
@@ -50,9 +50,9 @@ papers/
 
 ---
 
-## 完整索引 · 44 篇
+## 完整索引 · 47 篇
 
-### dir1_blueshift_decoupling/ (15 篇)
+### dir1_blueshift_decoupling/ (16 篇)
 
 | 文件名 | 期刊 / 年份 | 关键信息 |
 |---|---|---|
@@ -71,8 +71,9 @@ papers/
 | dir1_Yang_2017_MAPbI3-blueshift.pdf | JPCL 2017 | EPI 主导（第一性 AHC） |
 | dir1_Zhang_2023_bandgap-renormalization.pdf | Adv. Funct. Mater. 2023 | 静态 vs 动态畸变 |
 | dir1_Zhao_2019_CsPbI3-NC-size.pdf | ACS Energy Lett. 2019 | 尺寸依赖晶格-带隙 |
+| dir1_Jin_2022_strain-relaxation-lattice-reconfiguration.pdf | Adv. Energy Sustain. Res. 2022 | 应变弛豫→八面体倾转→光电性能综述 |
 
-### dir2_phase_segregation/ (5 篇)
+### dir2_phase_segregation/ (6 篇)
 
 | 文件名 | 期刊 / 年份 | 关键信息 |
 |---|---|---|
@@ -81,8 +82,9 @@ papers/
 | dir2_Muscarella_2020_pressure-suppression.pdf | arXiv 2020 | 0.3 GPa · k_seg ~30× |
 | dir2_Ruth_2023_thermodynamic-model.pdf | arXiv 2023 | 热力学带隙模型 |
 | dir2_Tang_2018_local-segregation.pdf | Nano Lett. 2018 | 局域直接观测 |
+| dir2_Bai_2022_film-homogeneity-phase-segregation.pdf | Science 378:747 (2022) | 均质化 FA/Cs 分布抑制相分离；3190 h >91% |
 
-### dir3_ion_migration/ (10 篇)
+### dir3_ion_migration/ (11 篇)
 
 | 文件名 | 期刊 / 年份 | 关键信息 |
 |---|---|---|
@@ -96,6 +98,7 @@ papers/
 | dir3_Shi_2024_thermal-stability.pdf | Small Struct. 2024 | 抑制迁移→热稳定 |
 | dir3_Tayagaki_2023_T-dependent-migration.pdf | Sol. Energy Mater. 2023 | E_a 0.27 eV · N_mobile 3× |
 | dir3_YuanHuang_2016_ion-migration-review.pdf | Acc. Chem. Res. 2016 | 离子迁移奠基综述 |
+| dir3_Hu_2026_molecular-press-annealing-PSC.pdf | Science (8 Jan 2026) | MPA 抑制 V'_I/离子迁移；PCE 26.6% 认证 |
 
 ### related_crossmaterial_instruments/ (4 篇)
 

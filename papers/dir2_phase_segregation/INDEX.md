@@ -1,11 +1,11 @@
 ---
 folder: dir2_phase_segregation
 topic: 混卤钙钛矿光致相分离 / solvent 工程 / 控制策略
-count: 5
-last_updated: 2026-04-21
+count: 6
+last_updated: 2026-04-23
 ---
 
-# dir2 · 相分离 · 5 篇一览
+# dir2 · 相分离 · 6 篇一览
 
 > 方向 2 的 5 篇论文串起一条**"奠基现象 → 空间观测 → 热力学 → 压力工程 → 动态调制"** 的完整推进链条，全部已深读完毕。
 
@@ -18,6 +18,7 @@ last_updated: 2026-04-21
 | 3 | Muscarella_2020 | **0.3 GPa 静水压 = 3% 化学压力，相分离速率 k_seg 下降 ~30×**（物理压力 = 化学压力 = Cs 替代） | 0.3 GPa · k_seg 27–33×；迁移势垒 +64 meV (I)；E_a 前向 0.27–0.30 eV | ✓ [报告](../../phd_phase4_literature_deep_read.md) |
 | 4 | Ruth_2023 | **热力学带隙模型统一预测 x_terminal / I_exc,threshold / 尺寸效应**（field 最完整公式） | U_I,Br ≈ 39 meV/halide (MAPb)；I_exc,threshold ≈ 20–200 μW/cm² | ✓ [报告](../../phd_phase4_literature_deep_read.md) |
 | 5 | Tang_2018 | **局域微区光谱直接空间可视化相分离**（sub-μm 级分辨率） | 阈值下限 Br:I = 1:10；domain 尺寸（未精确量化） | ✓ [报告](../../analysis/dir2_tang2018.md) |
+| 6 | Bai_2022 | **硒吩添加剂均质化 FA/Cs 阳离子分布，抑制相分离；3190 h MPP 保持 >91%** | FAxCs1-xPbI3；Schelling 模型模拟阳离子迁移；也适用 FACsPb(Br0.13I0.87)3 | — |
 
 ## 三条正交控制轴对比
 
