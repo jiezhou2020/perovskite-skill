@@ -1,13 +1,13 @@
 ---
 folder: dir2_phase_segregation
 topic: 混卤钙钛矿光致相分离 / solvent 工程 / 控制策略
-count: 6
-last_updated: 2026-04-23
+count: 10
+last_updated: 2026-05-07
 ---
 
-# dir2 · 相分离 · 6 篇一览
+# dir2 · 相分离 · 10 篇一览
 
-> 方向 2 的 5 篇论文串起一条**"奠基现象 → 空间观测 → 热力学 → 压力工程 → 动态调制"** 的完整推进链条，全部已深读完毕。
+> 原 6 篇串成 "奠基现象 → 空间观测 → 热力学 → 压力工程 → 动态调制" 的推进链条；2026-05-06/07 新增 4 篇——Fang 2024 / Zhang 2026 综述类 + Zhao 2020（应变激活 LHS，sub-grain SPM+PL 直接证据，方向 4 重要案例）+ Tiede 2020（碘缺陷重组主导 LHS 速率，化学计量 R_H 调控）。Tian 2022 同日加入但归 dir4（表征综述属性更强）。
 
 ## 快速检索表
 
@@ -19,6 +19,12 @@ last_updated: 2026-04-23
 | 4 | Ruth_2023 | **热力学带隙模型统一预测 x_terminal / I_exc,threshold / 尺寸效应**（field 最完整公式） | U_I,Br ≈ 39 meV/halide (MAPb)；I_exc,threshold ≈ 20–200 μW/cm² | ✓ [报告](../../phd_phase4_literature_deep_read.md) |
 | 5 | Tang_2018 | **局域微区光谱直接空间可视化相分离**（sub-μm 级分辨率） | 阈值下限 Br:I = 1:10；domain 尺寸（未精确量化） | ✓ [报告](../../analysis/dir2_tang2018.md) |
 | 6 | Bai_2022 | **硒吩添加剂均质化 FA/Cs 阳离子分布，抑制相分离；3190 h MPP 保持 >91%** | FAxCs1-xPbI3；Schelling 模型模拟阳离子迁移；也适用 FACsPb(Br0.13I0.87)3 | — |
+| 7 | Fang_2024 | **WBG 相分离综述：热力学 / 极化子诱导应变 / 电场驱动 三模型并列** | 极化子带隙漏斗 + 高密度反转；GB 重灾区 + 高 Br% 转本征；DOI 10.1002/adfm.202404402 | ✓ [中文翻译](../../full_translation_fang_2024.md) · [报告](../../reading_report_fang_2024.md) |
+| 8 | Zhang_2026 | **PSTSCs 视角下的相分离 — 组分/界面/添加剂工程综述** | 1.65–1.75 eV WBG；2T/3T/4T 架构对相分离敏感度差异；Sust. Chem. Energy Mater. | — |
+| 9 | Zhao_2020 | **LHS 在 Br<50% 是应变激活、Br>50% 才是本征**（shear-force SPM+confocal PL 200 nm 直接证据） | Fig. 4：35%Br 仅晶界 LHS、65%Br 全膜 LHS；W-H 应变 0.3% (薄膜) vs 0.0004% (单晶)；Nat. Commun. 11:6328 | ✓ `../../note_2026-05-06_PL_mapping_phase_segregation.md`（节段引用） |
+| 10 | Tiede_2020 | **碘子缺陷（V_I + I 间隙）局部重组主导 LHS 速率**（CW+脉冲双光源 + LSCM 谱分辨 + R_H 化学计量调控） | 暗区 PL → I-rich 形成更快；R_H↑ → k_growth↓ + k_recovery↑；I-rich 远超光照区（载流子/极化子长程驱动）；JPCL 11:4911 | — |
+
+> Tian 2022（卤素分离可视化技术综述）→ 见 `../dir4_characterization_decoupling/`
 
 ## 三条正交控制轴对比
 

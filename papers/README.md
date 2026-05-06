@@ -1,8 +1,8 @@
 ---
 name: 论文文件夹 · 命名规则与索引
-description: papers/ 目录下 44 篇 PDF 的组织方式、命名规则、完整索引
+description: papers/ 目录下 55 篇 PDF 的组织方式、命名规则、完整索引
 type: reference
-date: 2026-04-21
+date: 2026-05-07
 ---
 
 # papers/ 目录 · 命名与索引
@@ -11,10 +11,11 @@ date: 2026-04-21
 
 ```
 papers/
-├── dir1_blueshift_decoupling/       (16 篇)  方向1：蓝移/EPC/畸变解耦
-├── dir2_phase_segregation/          ( 6 篇)  方向2：相分离
+├── dir1_blueshift_decoupling/       (16 篇)  方向1：蓝移/EPC/畸变解耦（旧主线，保留参考）
+├── dir2_phase_segregation/          (10 篇)  方向2：相分离（机制）
 ├── dir3_ion_migration/              (11 篇)  方向3：离子迁移
-├── related_crossmaterial_instruments/ ( 4 篇)  跨材料 + 设备改良参考
+├── dir4_characterization_decoupling/( 2 篇)  方向4（新主线）：表征技术 → 相分离解耦
+├── related_crossmaterial_instruments/ ( 6 篇)  跨材料 + 设备改良参考
 ├── other_reviews_tandem/            (10 篇)  综述/tandem/通用
 └── README.md                        本文件
 ```
@@ -25,7 +26,7 @@ papers/
 
 | 字段 | 规则 |
 |---|---|
-| category | `dir1` / `dir2` / `dir3` / `related` / `other` |
+| category | `dir1` / `dir2` / `dir3` / `dir4` / `related` / `other` |
 | 作者 | 第一作者姓氏；双姓用驼峰（如 `FranciscoLopez`、`YuanHuang`、`ParkSeok`） |
 | 年份 | 4 位年份（出版年或 arXiv 首发年） |
 | 关键词 | 2–4 个 kebab-case 英文词，反映论文最核心一句话 |
@@ -50,7 +51,7 @@ papers/
 
 ---
 
-## 完整索引 · 47 篇
+## 完整索引 · 55 篇
 
 ### dir1_blueshift_decoupling/ (16 篇)
 
@@ -73,7 +74,7 @@ papers/
 | dir1_Zhao_2019_CsPbI3-NC-size.pdf | ACS Energy Lett. 2019 | 尺寸依赖晶格-带隙 |
 | dir1_Jin_2022_strain-relaxation-lattice-reconfiguration.pdf | Adv. Energy Sustain. Res. 2022 | 应变弛豫→八面体倾转→光电性能综述 |
 
-### dir2_phase_segregation/ (6 篇)
+### dir2_phase_segregation/ (10 篇)
 
 | 文件名 | 期刊 / 年份 | 关键信息 |
 |---|---|---|
@@ -83,6 +84,10 @@ papers/
 | dir2_Ruth_2023_thermodynamic-model.pdf | arXiv 2023 | 热力学带隙模型 |
 | dir2_Tang_2018_local-segregation.pdf | Nano Lett. 2018 | 局域直接观测 |
 | dir2_Bai_2022_film-homogeneity-phase-segregation.pdf | Science 378:747 (2022) | 均质化 FA/Cs 分布抑制相分离；3190 h >91% |
+| dir2_Tiede_2020_iodide-defect-rearrangement.pdf | JPCL 11:4911 (2020) | 碘缺陷局部重组主导 LHS 速率；化学计量 R_H 扫描 + LSCM 谱分辨 |
+| dir2_Zhao_2020_strain-activated-LHS-spm-PL.pdf | Nat. Commun. 11:6328 (2020) | shear-force SPM + 共聚焦 PL 200 nm 直接证据；35%Br 应变激活 LHS、65%Br 本征；Fig. 4 关键 |
+| dir2_Fang_2024_wideBG-phase-segregation-review.pdf | Adv. Funct. Mater. 2024 | WBG 相分离综述：极化子诱导应变 + 电场驱动模型；DOI 10.1002/adfm.202404402 |
+| dir2_Zhang_2026_PSTSCs-phase-segregation-review.pdf | Sust. Chem. Energy Mater. 2026 | 钙钛矿/硅 tandem 中相分离机制 + 组分/界面/添加剂工程综述 |
 
 ### dir3_ion_migration/ (11 篇)
 
@@ -100,7 +105,14 @@ papers/
 | dir3_YuanHuang_2016_ion-migration-review.pdf | Acc. Chem. Res. 2016 | 离子迁移奠基综述 |
 | dir3_Hu_2026_molecular-press-annealing-PSC.pdf | Science (8 Jan 2026) | MPA 抑制 V'_I/离子迁移；PCE 26.6% 认证 |
 
-### related_crossmaterial_instruments/ (4 篇)
+### dir4_characterization_decoupling/ (2 篇)
+
+| 文件名 | 期刊 / 年份 | 关键信息 |
+|---|---|---|
+| dir4_Qu_2026_SPM-perovskite-surface-interface.pdf | EES Solar 2026 | SPM/AFM/KPFM/SNOM/PL-AFM/AFM-IR/SPVM/tr-/pp-KPFM 表征综述 |
+| dir4_Tian_2022_halide-segregation-visualization-review.pdf | Electronics (MDPI) 2022 | 卤素分离可视化技术（PL mapping / CL / TEM-EDS / AFM）+ 机制综述 |
+
+### related_crossmaterial_instruments/ (6 篇)
 
 | 文件名 | 期刊 / 年份 | 关键信息 |
 |---|---|---|
@@ -108,6 +120,8 @@ papers/
 | related_FAPbI3_2025_octahedral-dynamics.pdf | arXiv 2025 | FAPbI3 热激发局部对称 |
 | related_Sihi_2022_SnSe-SnS-EPI-topological.pdf | JPCM 2022 | EPI 非线性带隙 + 拓扑 |
 | related_Xue_2025_SnSe-SnS-superlattice.pdf | arXiv 2025 | ML-FF anharmonic phonon |
+| related_Asami_2024_voltage-loss-quantum-structured.pdf | Sol. Energy Mater. Sol. Cells 273 (2024) 112957 | III-V QW 太阳电池电压损失分析（detailed balance）；方法可推广到钙钛矿 |
+| related_Almosni_2024_self-quenching-volatile-ink.pdf | ACS Appl. Energy Mater. 7, 11678 (2024) | 用乙二醇醚 (2MPro/2EPro/2MBu/2IPE) 替代 2ME 做 PSC 自淬火工艺 |
 
 ### other_reviews_tandem/ (10 篇)
 
@@ -135,6 +149,10 @@ papers/
 - `dir3_Chen_2020_arylammonium-suppression.pdf` — 同时涉及方向 2（宽带隙相分离）
 - `other_Aydin_2020_tandem-outdoor-T.pdf` — 三方向 + tandem 的 motivation 桥梁
 - `other_Nie_2023_wideBG-tandem-review.pdf` — PIPS 章节可作方向 2 综述支撑
+- `dir2_Zhang_2026_PSTSCs-phase-segregation-review.pdf` — 同时是 tandem 综述（other 类的可选指针）
+- `dir4_Qu_2026_SPM-perovskite-surface-interface.pdf` — KPFM/SPVM 章节可支撑方向 3（局域电场/离子迁移成像）
+- `dir4_Tian_2022_halide-segregation-visualization-review.pdf` — 直接服务方向 2（机制）的可视化证据
+- `dir2_Fang_2024_wideBG-phase-segregation-review.pdf` — 三机制框架是方向 4 表征解耦的 motivation 主轴
 
 ## 对应的深读报告位置
 

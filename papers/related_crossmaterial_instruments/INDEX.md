@@ -1,13 +1,13 @@
 ---
 folder: related_crossmaterial_instruments
-topic: 跨材料（IV-VI 热电）+ 物理观测装置改良
-count: 4
-last_updated: 2026-04-21
+topic: 跨材料（IV-VI 热电）+ 物理观测装置改良 + PSC 工艺
+count: 6
+last_updated: 2026-05-06
 ---
 
-# related · 跨材料 / 设备改良 · 4 篇一览
+# related · 跨材料 / 设备改良 · 6 篇一览
 
-> 4 篇全部未深读，从 RELATED_DECOUPLING_SURVEY.md 调研来。目的：跨材料借鉴 + 观测装置升级参考。
+> 原 4 篇是跨材料借鉴 + 观测装置升级参考；2026-05-06 新增 2 篇（Asami 电压损失方法论 / Almosni 安全溶剂工艺）。SPM 综述（Qu 2026）原入 related，后随博士新方向迁出至 dir4_characterization_decoupling。
 
 ## 快速检索表
 
@@ -17,6 +17,10 @@ last_updated: 2026-04-21
 | 2 | FAPbI3_2025 | **FAPbI3 热激发下八面体动力学与局部对称性**（方向 1 最新理论） | arXiv 2509.18617；未深读细节 | — |
 | 3 | Sihi_2022 | **SnS/SnSe 温度诱导拓扑相变 + EPI 诱导非线性带隙**（linewidth+lineshift 双拆解） | 预测相变温度 ~700 K；CBM/VBM EPC 非对称 | — |
 | 4 | Xue_2025 | **SnSe/SnS 超晶格 ML 力场 + anharmonic phonon 处理有限温软模** | Pnma → P4/nmm 相变；ML force field 工作流 | — |
+| 5 | Asami_2024 | **量子结构太阳电池电压损失定量分析（detailed balance）** | V_OC^SQ 公式；EQE 边陡化降低 radiative 损失；方法可推广到钙钛矿/CIGS/CZTS | — |
+| 6 | Almosni_2024 | **ACN + 乙二醇醚自淬火工艺替代 2ME（致畸 teratogen）做 FAPbI3 PSC** | 4 种 GE：2MPro / 2EPro / 2MBu / 2IPE；ACN:GE = 8:1；7 s spin-coat 无外淬火 | — |
+
+> Qu 2026（SPM 表征综述）→ 见 `../dir4_characterization_decoupling/`
 
 ## 三篇为什么值得读
 
