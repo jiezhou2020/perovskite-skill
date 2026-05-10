@@ -1,3 +1,17 @@
 *.txt
 downloads/
 .claude/
+
+# PPT 备份与临时文件
+*.bak_*
+~$*
+
+# 中间裁图与预览
+slide4_assets/
+slide4_preview.png
+
+# 根目录重复 PDF（dir2 已收录）
+papers/3305892271science.abn3148(1).pdf
+papers/local-rearrangement-of-the-iodide-defect-structure-determines-the-phase-segregation-effect-in-mixed-halide-perovskites.pdf
+papers/s41467-020-20066-7.pdf
+papers/sciadv.aao5616.pdf
