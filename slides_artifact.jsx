@@ -64,19 +64,19 @@ const S5 = () => {
     {
       n: 1,
       title: "PL signal is funneling-weighted, not phase-fraction-weighted",
-      body: "Minority I-rich domains capture carriers from a diffusion volume V_D and dominate emission even at φ_I ≈ 10⁻³. A PL red-shift tells you carriers found a low-E_g site — it does not tell you how much phase formed.",
+      body: "Carriers funnel into low-E_g I-rich domains over V_D ≈ 100–1000 nm, so emission is dominated even at φ_I ≈ 10⁻³. PL red-shift means carriers found a low-E_g site — not how much phase formed.",
       ref: "Hoke 2015 · Ruth 2023 (ΔF_light, V_D)",
     },
     {
       n: 2,
       title: "KPFM CPD is a 5-component convolution",
-      body: "V_CPD = W₀(χ_Br) − V_bb(N_defect) − V_SPV(I, N_defect) − V_ion(t, μ_X) − V_trap(r, t). A single static scan cannot attribute the signal to any one component, yet field reports routinely read it as local electric field.",
+      body: "V_CPD mixes W₀, V_bb, V_SPV, V_ion and V_trap. A static scan cannot isolate any one — yet 'excess CPD ⇒ local electric field' remains the field's default reading.",
       ref: "Qu 2026 · Garrett fast-KPFM",
     },
     {
       n: 3,
       title: "Ex-situ probes can drive the very state they measure",
-      body: "X-ray dose (XPS) and sputter (TOF-SIMS) move halides. A reported 'Br-rich surface' may be the probe's artifact, not the sample's state. Fang 2024 vs Navid 2026 directional disagreement is the canonical symptom.",
+      body: "X-ray dose (XPS) and ion sputter (TOF-SIMS) themselves drive halide migration. Reported 'Br-rich surfaces' may be probe artifacts — Fang 2024 ↔ Navid 2026 disagreement is symptomatic.",
       ref: "Tian 2022 · Fang 2024 ⟷ Navid 2026",
     },
   ];
@@ -84,7 +84,7 @@ const S5 = () => {
   return (
     <Frame page="0 5" title="4. Phase segregation is a coupled-state problem — three probes, three projections, one shared latent state">
       <Subtitle>
-        Three contradictions in the literature are not measurement noise. Each technique reports a different projection of the same physical state, so their disagreements are diagnostic — not failures to be averaged away.
+        Three contradictions in the literature are not measurement noise — they are evidence that each technique reports a different projection of one shared physical state.
       </Subtitle>
 
       {/* Probe row */}
@@ -191,7 +191,7 @@ const S6 = () => {
   return (
     <Frame page="0 6" title="5. Br-rich surface is conditionally stabilizing — three falsifiable sub-hypotheses on a coupled 5-state system">
       <Subtitle>
-        Phase segregation is governed by five coupled latent states. Br richness is neither necessary nor sufficient — its role is set by whether it co-moves with defect, electrostatic, strain and chemical-potential changes.
+        Five coupled latent states govern phase segregation. Br richness alone is neither necessary nor sufficient — its phenotype depends on whether the other four co-move with it.
       </Subtitle>
 
       {/* LEFT: pentagon SVG */}
@@ -283,14 +283,14 @@ const S7 = () => {
       body: "TOF-SIMS / AR-XPS / GIWAXS / Raman / RGA read the locked state. Each artifact channel A_m is calibrated by dose / sputter / exposure series — never assumed to be zero.",
       tech: "SIMS · XPS · GIWAXS · RGA", tscale: "static endpoint" },
     { n: 4, head: "LATENT INFERENCE", sub: "posterior · uncertainty",
-      body: "Bayesian inference returns p(Z, θ | y) with covariance. Jacobian SVD identifies ill-conditioned directions before any sample is made. Output: mechanism posteriors + Bayes factors.",
+      body: "Bayesian inference returns p(Z, θ | y) with covariance. Jacobian SVD identifies which Z directions are identifiable before any sample is fabricated — output: mechanism posteriors + Bayes factors.",
       tech: "HMC / VI · Jacobian SVD", tscale: "offline" },
   ];
 
   return (
     <Frame page="0 7" title="6. SL-PCI: four steps that turn correlative observation into Bayesian inference">
       <Subtitle>
-        State-Locked Physics-Informed Correlative Inference — write a defined state, freeze it for endpoint probes, infer a shared latent state with explicit artifact channels.
+        State-Locked Physics-Informed Correlative Inference: write a defined state → freeze it for endpoint probes → infer one shared latent state Z with explicit artifact channels.
       </Subtitle>
 
       {/* Feature equation banner */}
@@ -399,7 +399,7 @@ const S8 = () => {
   return (
     <Frame page="0 8" title="7. Forward models link nine techniques to one shared latent state Z">
       <Subtitle>
-        Listing H_m(Z; θ_m) explicitly makes the inference reproducible. Each technique's primary observable, governing equation and resolved Z components are laid out before any sample is fabricated.
+        Listing H_m(Z; θ_m) explicitly makes the inference reproducible. Each technique's observable, governing equation and resolved Z components are fixed before any sample is fabricated.
       </Subtitle>
 
       {/* Z definition banner */}
@@ -452,7 +452,7 @@ const S8 = () => {
 
       {/* Footer */}
       <div className="absolute text-center italic" style={{ bottom: 35, left: 40, right: 40, color: C.gray700, fontSize: 11 }}>
-        Every probe is over-determined when combined — no single instrument resolves Z, but their joint likelihood does.
+        No single instrument resolves Z — but the joint likelihood across all H_m does, and over-determination makes the inference robust to any one probe's failure.
       </div>
     </Frame>
   );
@@ -490,7 +490,7 @@ const S9 = () => {
   return (
     <Frame page="0 9" title="8. Each Aim progressively closes the unresolved Z directions — κ tracks the budget">
       <Subtitle>
-        Jacobian J_mj = ∂H_m / ∂Z_j is built from forward models before any sample exists. SVD reveals which mechanism directions a probe set constrains. Aim 1→3 adds probes that close specific ill-conditioned directions; condition number κ tracks progress.
+        Jacobian J_mj = ∂H_m / ∂Z_j is built before any sample exists. SVD identifies which Z directions a probe set constrains. Aim 1→3 closes specific ill-conditioned directions; condition number κ tracks the budget.
       </Subtitle>
 
       {/* 3 stage cards with arrows */}
@@ -556,7 +556,7 @@ const S9 = () => {
 
       {/* Footer */}
       <div className="absolute text-center italic" style={{ bottom: 32, left: 40, right: 40, color: C.gray700, fontSize: 11 }}>
-        All κ values are computed by SVD on the Jacobian before any sample is fabricated — experimental power is a number you plan around, not a hope after data collection.
+        All κ values are computed by SVD before any sample is fabricated — experimental power is a number you plan around, not a hope after data collection.
       </div>
     </Frame>
   );
@@ -605,7 +605,7 @@ const S10 = () => {
   return (
     <Frame page="1 0" title="9. Three-year roadmap — two manuscripts and one thesis, all anchored on falsifiable claims with reported uncertainty">
       <Subtitle>
-        Year 1 builds the pipeline on synthetic data and a fiducial-grid sample platform. Year 2 publishes the SL-PCI proof on the Br-rich vs passivation matrix. Year 3 closes the mechanism map and writes the thesis.
+        Year 1 builds the inference pipeline on synthetic data + a fiducial-grid sample platform. Year 2 publishes the SL-PCI proof-of-concept on the Br-rich vs passivation matrix. Year 3 closes the mechanism map across the high-Br stress regime.
       </Subtitle>
 
       {/* Gantt SVG */}
