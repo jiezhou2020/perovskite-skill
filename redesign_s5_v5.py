@@ -45,7 +45,7 @@ COLS = [
         num="I.",
         sub="THE PHENOMENON",
         fig_label="FIG. 1",
-        fig_caption="Hoke 2015, Fig 1.  MAPb(Br0.4I0.6)3 thin film PL spectra under 457 nm light @ 50 mW/cm², recorded 0-45 s in 5 s steps.",
+        fig_caption="Hoke 2015, Fig. 2 (a-c).  MAPb(Br0.4I0.6)3 PL evolution under 457 nm @ 15 mW/cm², 0-45 s in 5 s steps; (b) intensity dependence; (c) dark recovery cycles.",
         problem=(
             "Under continuous 50-100 mW/cm² illumination the initial alloy-bandgap "
             "emission (e.g., 1.85 eV in MAPb(Br0.4I0.6)3) decays within 60-100 s. "
@@ -66,7 +66,7 @@ COLS = [
         num="II.",
         sub="THE MECHANISM",
         fig_label="FIG. 2",
-        fig_caption="Yu 2026, Fig 1b (reproduced from Draguta 2017).  Cartoon: filled circles = photogenerated e-h pairs; red regions = I-rich domains; white = Br-rich matrix.",
+        fig_caption="Yu 2026, Fig. 3b (originally Draguta 2017, ref 89).  Filled dark circles = photogenerated e-h pairs; empty circles = pairs that induced segregation; red = I-rich domains; white = Br-rich matrix.",
         problem=(
             "Photogenerated electron-hole pairs polarize the soft halide lattice "
             "via polaron formation. The local free-energy gain drives I⁻ ions "
@@ -88,7 +88,7 @@ COLS = [
         num="III.",
         sub="WHY IT MATTERS",
         fig_label="FIG. 3",
-        fig_caption="Chen 2020, Fig S1 (or Yu 2026 Fig 3).  V_OC deficit vs Eg for WBG PSCs:  > 1.72 eV cells lose > 0.5 V.",
+        fig_caption="Fang 2024, Fig. 1e (originally Wiley-VCH 2023, ref 26).  V_OC deficit vs bandgap for WBG PSCs: > 1.72 eV cells systematically lose > 0.5 V.",
         problem=(
             "Once I-rich domains form, carriers thermalize into them and emit "
             "at 1.65 eV — pinning quasi-Fermi splitting far below the alloy "
