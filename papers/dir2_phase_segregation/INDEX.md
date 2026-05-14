@@ -1,28 +1,37 @@
 ---
 folder: dir2_phase_segregation
 topic: 混卤钙钛矿光致相分离 / solvent 工程 / 控制策略
-count: 10
-last_updated: 2026-05-07
+count: 19
+last_updated: 2026-05-15
 ---
 
-# dir2 · 相分离 · 10 篇一览
+# dir2 · 相分离 · 19 篇一览
 
-> 原 6 篇串成 "奠基现象 → 空间观测 → 热力学 → 压力工程 → 动态调制" 的推进链条；2026-05-06/07 新增 4 篇——Fang 2024 / Zhang 2026 综述类 + Zhao 2020（应变激活 LHS，sub-grain SPM+PL 直接证据，方向 4 重要案例）+ Tiede 2020（碘缺陷重组主导 LHS 速率，化学计量 R_H 调控）。Tian 2022 同日加入但归 dir4（表征综述属性更强）。
+> 历史脉络：2026-05-06 之前 10 篇为奠基现象 / 热力学 / 压力工程 / 动态调制；2026-05-12 至 14 补齐 4 个文献矛盾的源头论文（**Brivio 2016 / Chen 2021 / Peng 2023 / Fan 2025 / Draguta 2017 / Zhao 2017 / Hu 2026**）。19 篇覆盖 PIPS 完整理论 + 实验 + 综述生态。
 
 ## 快速检索表
 
 | # | 论文（作者_年份） | 核心一句话 | 最关键锚点 | 深读 |
 |---|---|---|---|---|
-| 1 | Feng_2023 | **周期加热（ΔT=10 °C 秒级摆动 + 10% 占空比）可在 50 W/cm² 下完全抑制相分离** | ΔT=10 °C；最优脉冲 t/T=0.5/5 s；180 s 内零相分离 | ✓ [报告](../../phd_phase4_literature_deep_read.md) |
-| 2 | Hoke_2015 | **混卤钙钛矿光致相分离奠基论文**（可逆性 + Br:I 阈值 + trap 图像） | Br:I > 1:4 为相分离阈值；可逆暗态重混 | ✓ [报告](../../analysis/dir2_hoke2015.md) |
-| 3 | Muscarella_2020 | **0.3 GPa 静水压 = 3% 化学压力，相分离速率 k_seg 下降 ~30×**（物理压力 = 化学压力 = Cs 替代） | 0.3 GPa · k_seg 27–33×；迁移势垒 +64 meV (I)；E_a 前向 0.27–0.30 eV | ✓ [报告](../../phd_phase4_literature_deep_read.md) |
-| 4 | Ruth_2023 | **热力学带隙模型统一预测 x_terminal / I_exc,threshold / 尺寸效应**（field 最完整公式） | U_I,Br ≈ 39 meV/halide (MAPb)；I_exc,threshold ≈ 20–200 μW/cm² | ✓ [报告](../../phd_phase4_literature_deep_read.md) |
-| 5 | Tang_2018 | **局域微区光谱直接空间可视化相分离**（sub-μm 级分辨率） | 阈值下限 Br:I = 1:10；domain 尺寸（未精确量化） | ✓ [报告](../../analysis/dir2_tang2018.md) |
-| 6 | Bai_2022 | **硒吩添加剂均质化 FA/Cs 阳离子分布，抑制相分离；3190 h MPP 保持 >91%** | FAxCs1-xPbI3；Schelling 模型模拟阳离子迁移；也适用 FACsPb(Br0.13I0.87)3 | — |
-| 7 | Fang_2024 | **WBG 相分离综述：热力学 / 极化子诱导应变 / 电场驱动 三模型并列** | 极化子带隙漏斗 + 高密度反转；GB 重灾区 + 高 Br% 转本征；DOI 10.1002/adfm.202404402 | ✓ [中文翻译](../../full_translation_fang_2024.md) · [报告](../../reading_report_fang_2024.md) |
-| 8 | Zhang_2026 | **PSTSCs 视角下的相分离 — 组分/界面/添加剂工程综述** | 1.65–1.75 eV WBG；2T/3T/4T 架构对相分离敏感度差异；Sust. Chem. Energy Mater. | — |
-| 9 | Zhao_2020 | **LHS 在 Br<50% 是应变激活、Br>50% 才是本征**（shear-force SPM+confocal PL 200 nm 直接证据） | Fig. 4：35%Br 仅晶界 LHS、65%Br 全膜 LHS；W-H 应变 0.3% (薄膜) vs 0.0004% (单晶)；Nat. Commun. 11:6328 | ✓ `../../note_2026-05-06_PL_mapping_phase_segregation.md`（节段引用） |
-| 10 | Tiede_2020 | **碘子缺陷（V_I + I 间隙）局部重组主导 LHS 速率**（CW+脉冲双光源 + LSCM 谱分辨 + R_H 化学计量调控） | 暗区 PL → I-rich 形成更快；R_H↑ → k_growth↓ + k_recovery↑；I-rich 远超光照区（载流子/极化子长程驱动）；JPCL 11:4911 | — |
+| 1 | **Brivio_2016** ⭐ | **C1 矛盾源头**：DFT + QCA 算 MAPb(I,Br)₃ miscibility gap 0.19 < x_Br < 0.68；critical T_c = 343 K | 热力学合金理论的 PVK 引入；funneling 理论的基础 | — |
+| 2 | Hoke_2015 | **PVK 光致相分离奠基论文**（C4 矛盾的"完全可逆"一侧）| Br:I > 1:4 阈值；PL 暗态完全重混；Chem Sci 6, 613 | ✓ [深读](../../analysis/dir2_hoke2015.md) |
+| 3 | **Draguta_2017** | **funneling 概念奠基**：低 Eg I-rich 域吸引载流子降低 F_light，驱动相分离 | DFT + 实验阈值；论 V_D 调控可抑制；Nat Commun 8:200 | — |
+| 4 | Tang_2018 | **C2 矛盾的"晶界一侧"**：confocal PL + KPFM，I → grain boundary（MAPb, x_Br=0.3）| Br:I 1:10 阈值；GB 处正空间电荷；Nano Lett 18:2172 | ✓ [深读](../../analysis/dir2_tang2018.md) · [批评](../../analysis/dir2_tang2018_critique.md) |
+| 5 | Tiede_2020 | **C4 矛盾的"缺陷 memory"一侧**：CW+脉冲双光源 + R_H 化学计量调控 | R_H↑ → k_growth↓ + k_recovery↑；I-rich 范围 ≫ 光照区；JPCL 11:4911 | — |
+| 6 | Muscarella_2020 | **0.3 GPa 静水压 ≈ 3% 化学压力 ≈ Cs 替代**，相分离速率 ↓30× | k_seg 27–33×；I 迁移势垒 +64 meV；E_a 前向 0.27–0.30 eV | ✓ [报告](../../phd_phase4_literature_deep_read.md) |
+| 7 | Zhao_2017 ⭐ | **应变即不稳定性**：薄膜 0.3% 应变 vs 单晶 0.0004%，应变加速光致离子迁移 | 热膨胀失配生成各向应变；面内拉应力 / 面外压应力；Sci Adv aao5616 | — |
+| 8 | Zhao_2020 | **LHS 在 Br<50% 是应变激活、Br>50% 才是本征** | Fig.4: 35%Br GB only / 65%Br whole film；W-H 应变 0.3 vs 0.0004%；Nat Commun 11:6328 | ✓ [节段引用](../../note_2026-05-06_PL_mapping_phase_segregation.md) |
+| 9 | **Chen_2021** ⭐ | **C1 矛盾的一侧**：unified theory，funneling 自由能 F_light = nE_g；预测阈值 1750 W/cm² 偏 50× | 5 化合物相图 + 三相点；x_terminal = 0；Nat Commun 12:2687 | ✓ [批评](../../analysis/dir2_chen2021_critique.md) |
+| 10 | Bai_2022 | **硒吩添加剂均质化 FA/Cs 阳离子分布，抑制相分离；3190 h MPP > 91%** | FAxCs1-xPbI3；Schelling 模型；Science abn3148 | — |
+| 11 | Feng_2023 | **周期加热（ΔT=10 °C 秒级摆动 + 10% 占空比）可在 50 W/cm² 下完全抑制相分离** | ΔT=10 °C；最优脉冲 t/T=0.5/5 s；180 s 零相分离 | ✓ [报告](../../phd_phase4_literature_deep_read.md) |
+| 12 | Ruth_2023 | **C1 矛盾另一侧 + 完整 thermo 模型**：U_I,Br = 39 meV，I_th 20–200 μW/cm²；与 Chen 差 10⁷× | x_terminal, I_th, KMC kinetics 一揽子解析；Brennan/Kuno 框架 | ✓ [批评](../../analysis/dir2_ruth2023_critique.md) |
+| 13 | **Peng_2023** ⭐ | **C3 矛盾源头**：PFM 数值显示 funneling 弱 1000×，必须加 G_sep 唯象项 | cryo-STEM-CL 看到 spinodal 颗粒 ~250 nm；G_sep 物理起源未明；Matter 6:2052 | ✓ [批评](../../analysis/dir2_peng2023_critique.md) |
+| 14 | Fang_2024 | **WBG 相分离综述：热力学 / 极化子诱导应变 / 电场驱动 三模型并列** | 极化子带隙漏斗 + 高密度反转；GB 重灾区；DOI 10.1002/adfm.202404402 | ✓ [中文](../../full_translation_fang_2024.md) · [报告](../../reading_report_fang_2024.md) |
+| 15 | **Fan_2025** ⭐ | **C2 矛盾的"晶心一侧" + C4 应变 memory**：plunge-freeze cryo-EM + EELS + 4D-STEM | I → grain center（CsPb, x_Br=0.7）；4% 各向异性应变残留；Cell Rep Phys Sci 6:102653 | ✓ [批评](../../analysis/dir2_fan2025_critique.md) |
+| 16 | Kim_2025 | WBG 综述 — 创新与近期进展 | Small Methods 综述 | — |
+| 17 | Yu_2026 | **From Part to Whole**：subcell 视角下相分离推进综述 | ACS AMI；与 Zhang 2026 互补 | — |
+| 18 | **Hu_2026** ⭐ | **2026 最新 PIPS 综述**：机制 + 抑制策略 + 器件性能优化 | ACS AMI 18:10725-10742；现代 PIPS 抑制方法全总览 | — |
+| 19 | Zhang_2026 | **PSTSCs 视角下的相分离 — 组分/界面/添加剂工程综述** | 1.65–1.75 eV WBG；2T/3T/4T 架构敏感度；Sust Chem Energy Mater | — |
 
 > Tian 2022（卤素分离可视化技术综述）→ 见 `../dir4_characterization_decoupling/`
 
@@ -44,6 +53,10 @@ last_updated: 2026-05-07
 
 - `../../analysis/dir2_hoke2015.md` — Hoke 2015 深读
 - `../../analysis/dir2_tang2018.md` — Tang 2018 深读
+- `../../analysis/dir2_tang2018_critique.md` — Tang 2018 正式批评（证伪式审视 + SL-PCI 实验清单）
+- `../../analysis/dir2_chen2021_critique.md` — Chen 2021 正式批评（理论 funneling 0D 框架的 50× 阈值偏差 + Strain 后置补丁问题）
+- `../../analysis/dir2_peng2023_critique.md` — Peng 2023 正式批评（cryo-STEM-CL 单晶岛 spinodal；funneling 弱 1000× 是 Chen 的实验内嵌证伪；$G_{sep}$ 唯象项的物理起源未解）
+- `../../analysis/dir2_fan2025_critique.md` — Fan 2025 正式批评（plunge-freeze cryo-EM + 同区 EELS/4D-STEM；I→晶心 vs Tang 矛盾的组分依赖反转假设；SL-PCI 在 dir2 方法学最近先行者）
 - `../../analysis/dir2_lu2025.md` — Lu 2025 深读（跨方向 1/2）
 - `../../analysis/dir2_amat2014.md` — Amat 2014 深读（跨方向 1/2）
 - `../../phd_phase4_literature_deep_read.md` — Feng / Muscarella / Ruth 深读
