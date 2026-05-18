@@ -30,22 +30,17 @@ strong { font-weight: 700; }
 em, i { font-style: italic; }
 sub, sup { font-size: 72%; line-height: 0; }
 .eq { font-family: "Cambria Math", "Times New Roman", serif; text-align: center; font-size: 9.8pt; margin: 4pt 0 5pt 0; padding: 2pt 0; background: transparent; border: 0; page-break-inside: avoid; }
-.figure-box { border: 0.7px solid #8b9bab; background: #f8fafc; padding: 6pt 7pt; margin: 6pt 0 7pt 0; page-break-inside: avoid; }
-.figure-title { font-weight: 700; font-size: 9.4pt; margin-bottom: 4pt; color: #223d57; }
-.flow-row { display: flex; gap: 4pt; justify-content: space-between; margin: 3pt 0; }
-.flow-row span { display: inline-block; flex: 1 1 0; text-align: center; border: 0.6px solid #789; background: #fff; padding: 3.5pt 2pt; font-size: 8.5pt; min-height: 16pt; }
-.caption { font-size: 8.4pt; color: #444; margin: 3pt 0 0 0; text-align: left; }
 a { color: #111; text-decoration: none; }
 </style>
 </head>
 <body>
 <h1>Research Proposal</h1>
-<p><strong>Lin Weiye</strong><br />
+<p><strong>Lin Weiye</strong><br>
 <strong>2026/05/18</strong></p>
 <h2>Research Theme</h2>
 <p><strong>State-Locked Decoupling of Photoinduced Halide Phase Segregation in Wide-Bandgap Mixed-Halide Perovskites</strong></p>
 <h2>Abstract</h2>
-<p>Wide-bandgap mixed-halide perovskites are key top absorbers for perovskite/silicon tandem solar cells, but their voltage and spectral stability are limited by photoinduced I/Br phase segregation. This project proposes a <strong>state-locked decoupling framework</strong>: drive the material into defined segregation states, suppress further evolution by low-temperature locking, and read each locked state using optical, chemical, structural, electrostatic, and defect-sensitive probes. The locked-state fingerprints will constrain a Cahn-Hilliard-type composition-evolution model and identify which physical term dominates onset, growth, saturation, and recovery. The expected result is a falsifiable mechanism map rather than a PL-only description of phase segregation.</p>
+<p>Wide-bandgap (1.65–1.80 eV) mixed-halide perovskites are key top absorbers for perovskite/silicon tandem solar cells, but their voltage and spectral stability are limited by photoinduced I/Br phase segregation, which causes quasi-Fermi-level-splitting reduction and open-circuit voltage loss. This project proposes a <strong>state-locked decoupling framework</strong> that experimentally and theoretically separates <strong>reversible optical readout</strong> (PL, KPFM) from <strong>irreversible chemical / structural memory</strong> (an auxiliary field <i>q</i>): drive the material into reproducible trajectory checkpoints <i>S</i><sub>0</sub>–<i>S</i><sub>5</sub>, suppress further evolution by low-temperature locking, and read each locked state using optical, chemical, structural, electrostatic, and defect-sensitive probes. The locked-state fingerprints will constrain a <strong>driven</strong> Cahn-Hilliard composition-evolution model (with non-equilibrium carrier coupling and an irreversibility channel) and identify which physical term dominates onset, growth, saturation, and recovery. The expected result is a falsifiable mechanism map, with a hard pre-registered failure condition, rather than a PL-only description of phase segregation.</p>
 <h2>1. Background and Research Question</h2>
 <p>Wide-bandgap mixed-halide perovskites with bandgaps of about 1.65-1.80 eV are essential for high-efficiency tandem photovoltaics<sup>8</sup>. Their adjustable I/Br ratio enables bandgap control, but the same compositional flexibility also creates a serious instability: under illumination, initially mixed halides can segregate into iodide-rich and bromide-rich regions<sup>1</sup>. The iodide-rich regions have lower bandgap, collect carriers by funneling, red-shift photoluminescence (PL), and reduce quasi-Fermi-level splitting and open-circuit voltage<sup>1,5</sup>.</p>
 <p>Previous studies have clarified important parts of this process. Hoke et al. established reversible red-shifted emission in mixed-halide perovskites<sup>1</sup>; Brivio et al. described the thermodynamic miscibility gap<sup>2</sup>; Tang<sup>3</sup>, Zhao<sup>4</sup>, Peng<sup>6</sup>, and Fan<sup>7</sup> showed that local microstructure, strain, and cryogenic imaging reveal spatially heterogeneous segregation pathways. A unified theoretical account that combines thermodynamics, electrostatics, and carrier funneling has also been proposed<sup>5</sup>. However, the field still lacks an operational method to decide whether different measurements are observing the same material state. A PL time point is not enough, because PL can be dominated by a small low-bandgap domain and may not represent average composition or complete recovery.</p>
@@ -53,7 +48,7 @@ a { color: #111; text-decoration: none; }
 <blockquote>
 <p>Can photoinduced halide phase segregation be divided into reproducible operational states, and can locked-state readout identify which physical term controls each transition?</p>
 </blockquote>
-<p>This question is motivated by four unresolved contradictions: where segregation starts, whether non-optical precursors exist before PL onset, what PL actually reports, and whether optical recovery means material recovery. The proposed project therefore shifts the unit of analysis from a single PL trace to a <strong>locked material state</strong>.</p>
+<p>This question is motivated by four unresolved contradictions in the literature: (C1) <strong>where</strong> segregation starts (grain boundary, grain interior, or intragrain clusters); (C2) <strong>when</strong> it truly begins (threshold crossing, classical nucleation, or spinodal amplification, with possible non-optical precursors preceding PL onset); (C3) <strong>what</strong> PL actually reports (chemical composition or funneling-weighted emission from a small low-bandgap domain); and (C4) <strong>whether</strong> optical recovery implies material recovery. The proposed project therefore shifts the unit of analysis from a single PL trace to a <strong>locked material state</strong>, so that each contradiction is tested against state-resolved, multi-modal endpoints rather than a PL time point.</p>
 <h2>2. Objective, Hypothesis, and State Definition</h2>
 <p>The objective is to establish a state-resolved experimental and physical framework for photoinduced phase segregation in wide-bandgap mixed-halide perovskites. The framework must be useful even if the initial state boundaries are revised by data.</p>
 <p>The central hypothesis is:</p>
@@ -61,60 +56,74 @@ a { color: #111; text-decoration: none; }
 <p>Photoinduced halide phase segregation can be segmented into reproducible operational states <i>S</i><sub>0</sub> to <i>S</i><sub>5</sub>. The conserved halide composition field <i>c</i>(<b>r</b>, <i>t</i>) evolves according to a Cahn-Hilliard-type framework, while mobility, electrostatic, elastic, interface, and memory channels determine which term dominates each state transition.</p>
 </blockquote>
 <p>The proposed operational states are:</p>
+<p>Each state is defined by a <strong>primary</strong> trigger (a numerical threshold on a single anchor observable) and <strong>secondary</strong> corroborating channels. When a secondary channel disagrees with the primary trigger, the disagreement itself is recorded as a state-resolved diagnostic rather than being averaged away. Numerical thresholds are to be locked at the end of Year 1 from baseline statistics.</p>
 <table>
 <thead>
 <tr>
 <th>State</th>
 <th>Operational meaning</th>
-<th>Main locking cue</th>
+<th>Primary trigger (anchor)</th>
+<th>Secondary / corroborating channels</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><i>S</i><sub>0</sub></td>
 <td>dark mixed baseline</td>
-<td>PL, potential, structural, and chemical signals remain within baseline noise</td>
+<td>all channels within ±2σ of dark baseline</td>
+<td>—</td>
 </tr>
 <tr>
 <td><i>S</i><sub>1</sub></td>
 <td>photoactivated precursor</td>
-<td>CPD/SPV or weak optical precursor changes before clear composition contrast</td>
+<td>KPFM ΔCPD &gt; threshold <em>before</em> PL red-fraction exceeds noise floor</td>
+<td>SPV, weak operando XRD shift</td>
 </tr>
 <tr>
 <td><i>S</i><sub>2</sub></td>
 <td>segregation onset</td>
-<td>iodide-rich PL, XRD/GIWAXS splitting, EELS/SIMS contrast, or another endpoint indicator first exceeds threshold</td>
+<td>PL red-fraction crosses threshold (numerical, to be set in Year 1)</td>
+<td>GIWAXS/XRD peak splitting, SIMS/EELS contrast</td>
 </tr>
 <tr>
 <td><i>S</i><sub>3</sub></td>
 <td>growth</td>
-<td>red fraction, spatial contrast, or domain size increases monotonically</td>
+<td>PL red-fraction increases monotonically with dose</td>
+<td>spatial domain count, GIWAXS peak area</td>
 </tr>
 <tr>
 <td><i>S</i><sub>4</sub></td>
 <td>saturated segregated state</td>
-<td>PL and at least one non-PL endpoint channel approach a plateau</td>
+<td>PL red-fraction plateau (d/d<i>t</i> &lt; threshold)</td>
+<td>at least one non-PL channel also plateaus</td>
 </tr>
 <tr>
 <td><i>S</i><sub>5</sub></td>
 <td>recovery / memory</td>
-<td>optical recovery is compared with residual chemical, structural, or defect memory</td>
+<td>PL recovers to ≤ 110% of <i>S</i><sub>0</sub> baseline after dark relaxation</td>
+<td>residual <i>q</i>(<b>r</b>) in XPS / SIMS / GIWAXS PbI<sub>2</sub> tail</td>
 </tr>
 </tbody>
 </table>
 <p>The measured fingerprint of state <i>S</i><sub>k</sub> is:</p>
-<div class="eq" style="position: relative;"><i>Z</i>(<i>S</i><sub>k</sub>) = [<i>c</i><sub>k</sub>(<b>r</b>), <i>v</i><sub>k</sub>(<b>r</b>), φ<sub>k</sub>(<b>r</b>), ε<sub>k</sub>(<b>r</b>), <i>q</i><sub>k</sub>(<b>r</b>)]<span style="position: absolute; right: 2pt; font-style: normal;">(1)</span></div>
-<p>Here <i>c</i> is the local iodide fraction, <i>v</i> is a vacancy or ionic-mobility proxy, φ is a surface/local potential proxy, ε is strain or microstrain, and <i>q</i> represents irreversible chemistry or memory. This fingerprint is not claimed to be a complete microscopic state. It is an experimentally accessible constraint on the model.</p>
+<div class="eq" style="position: relative;"><i>Z</i>(<i>S</i><sub>k</sub>) = [<i>c</i><sub>k</sub>(<b>r</b>), &nbsp;<i>v̄</i><sub>k</sub>, &nbsp;φ<sub>k</sub>(<b>r</b>), ε<sub>k</sub>(<b>r</b>), <i>q</i><sub>k</sub>(<b>r</b>)]<span style="position: absolute; right: 2pt; font-style: normal;">(1)</span></div>
+
+<p>Here <i>c</i>(<b>r</b>) is the local iodide fraction, <i>v̄</i> is a <strong>sample-averaged scalar</strong> ionic-conductivity parameter (admittance/impedance derived; the only non-field entry in <i>Z</i>), φ(<b>r</b>) is a surface/local potential proxy, ε(<b>r</b>) is strain or microstrain, and <i>q</i>(<b>r</b>) is the auxiliary field for irreversible chemistry / trapped-charge memory. <i>S</i><sub>k</sub> are therefore <strong>reproducible trajectory checkpoints along a controlled protocol</strong>, not thermodynamic states; the framework admits hysteresis and non-Markovian channels through <i>q</i>. The fingerprint is not claimed to be a complete microscopic state — it is an experimentally accessible constraint on the model.</p>
 <h2>3. Physical Framework</h2>
-<p>The primary order parameter is the conserved halide composition:</p>
-<div class="eq" style="position: relative;"><i>c</i>(<b>r</b>, <i>t</i>) = <i>x</i><sub>I</sub>(<b>r</b>, <i>t</i>), &nbsp;&nbsp; d/dt ∫<sub>Ω</sub> <i>c</i>(<b>r</b>, <i>t</i>) dV ≈ 0<span style="position: absolute; right: 2pt; font-style: normal;">(2)</span></div>
+<p>The primary order parameter is the local iodide fraction. Within the segregation regime (no halide loss to side phases), it is conserved:</p>
+<div class="eq" style="position: relative;"><i>c</i>(<b>r</b>, <i>t</i>) = <i>x</i><sub>I</sub>(<b>r</b>, <i>t</i>), &nbsp;&nbsp; d/dt ∫<sub>Ω</sub> <i>c</i>(<b>r</b>, <i>t</i>) dV = 0 &nbsp; (when <i>R</i><sub>q</sub> = 0)<span style="position: absolute; right: 2pt; font-style: normal;">(2)</span></div>
+
 <p>For a mixed I/Br lattice, a regular-solution-type free energy gives the basic demixing tendency:</p>
 <div class="eq" style="position: relative;"><i>f</i><sub>mix</sub>(<i>c</i>) = (<i>k</i><sub>B</sub><i>T</i>/Ω<sub>0</sub>)[<i>c</i> ln <i>c</i> + (1 - <i>c</i>) ln(1 - <i>c</i>) + χ<i>c</i>(1 - <i>c</i>)]<span style="position: absolute; right: 2pt; font-style: normal;">(3)</span></div>
-<p>The working free-energy functional is:</p>
-<div class="eq" style="position: relative;"><i>G</i>[<i>c</i>] = ∫<sub>Ω</sub> [<i>f</i><sub>mix</sub>(<i>c</i>) + (κ/2)|∇<i>c</i>|<sup>2</sup> + <i>f</i><sub>light</sub> + <i>f</i><sub>elastic</sub> + <i>f</i><sub>elec</sub>] dV + <i>G</i><sub>interface</sub><span style="position: absolute; right: 2pt; font-style: normal;">(4)</span></div>
-<p>The corresponding Cahn-Hilliard-type evolution equation<sup>9</sup> is:</p>
-<div class="eq" style="position: relative;">∂<i>c</i>/∂<i>t</i> = ∇ · [<i>M</i>(<i>c</i>, <i>v</i>, <i>T</i>)∇μ<sub>c</sub>] + <i>R</i><sub>q</sub>, &nbsp;&nbsp; μ<sub>c</sub> = δ<i>G</i>/δ<i>c</i><span style="position: absolute; right: 2pt; font-style: normal;">(5)</span></div>
-<p>In this formulation, <i>f</i><sub>mix</sub> and the gradient term describe thermodynamic demixing and domain formation; <i>M</i>(<i>c</i>, <i>v</i>, <i>T</i>) describes vacancy-assisted ionic mobility; <i>f</i><sub>elec</sub> and <i>f</i><sub>elastic</sub> capture potential and strain contributions; <i>G</i><sub>interface</sub> enters through boundaries and grain/interface conditions; <i>R</i><sub>q</sub> is a controlled extension for irreversible chemistry or material memory. The model will be used diagnostically: for each transition, the dominant term is the one that best explains onset position, growth rate, saturation, or residual memory with stated uncertainty.</p>
+
+<p>The working effective free-energy functional is:</p>
+<div class="eq" style="position: relative;"><i>G</i>[<i>c</i>] = ∫<sub>Ω</sub> [<i>f</i><sub>mix</sub>(<i>c</i>) + (κ/2)|∇<i>c</i>|<sup>2</sup> + <i>f</i><sub>carrier</sub>(<i>c</i>, <i>n</i>, <i>p</i>) + <i>f</i><sub>elastic</sub> + <i>f</i><sub>elec</sub>] dV + <i>G</i><sub>interface</sub><span style="position: absolute; right: 2pt; font-style: normal;">(4)</span></div>
+
+<p>Here <i>f</i><sub>carrier</sub> is <strong>not</strong> a thermodynamic free energy: it is the effective potential obtained after adiabatic elimination of fast photo-excited carriers, expressed through their quasi-Fermi levels<sup>5</sup>; illumination enters as a non-equilibrium driver rather than a state function. The corresponding driven Cahn-Hilliard-type evolution equation<sup>9</sup> is:</p>
+<div class="eq" style="position: relative;">∂<i>c</i>/∂<i>t</i> = ∇ · [<i>M</i>(<i>c</i>, <i>v̄</i>, <i>T</i>)∇μ<sub>c</sub>] − <i>k</i>(<i>c</i>, <i>I</i>) <i>c</i> + <i>k</i><sub>rev</sub><i>q</i>, &nbsp;&nbsp; ∂<i>q</i>/∂<i>t</i> = <i>k</i>(<i>c</i>, <i>I</i>) <i>c</i> − <i>k</i><sub>rev</sub><i>q</i>, &nbsp;&nbsp; μ<sub>c</sub> = δ<i>G</i>/δ<i>c</i><span style="position: absolute; right: 2pt; font-style: normal;">(5)</span></div>
+
+<p>Eq. (5) is closed by no-flux boundary conditions at the film/substrate and air interfaces; <i>G</i><sub>interface</sub> supplies the grain-boundary and electrode surface-exchange terms. Variables: <i>v̄</i> is a <strong>sample-averaged</strong> ionic-conductivity parameter calibrated from impedance/admittance (not a spatial field, in contrast to <i>c</i>(<b>r</b>) and <i>q</i>(<b>r</b>)); <i>q</i>(<b>r</b>, <i>t</i>) is an auxiliary field tracking irreversible chemistry / trapped-charge memory (e.g., halide bound to a secondary PbI<sub>2</sub>/PbBr<sub>2</sub> phase, deep-trap occupation); <i>k</i> and <i>k</i><sub>rev</sub> are forward/reverse rate coefficients. The pair (Eq. 5a, Eq. 5b) conserves the total halide budget <i>c</i> + <i>q</i>; the conservation in Eq. (2) holds whenever <i>k</i> can be set to zero by experimental design (e.g., inert atmosphere, sub-degradation light dose).</p>
+<p>In this formulation, <i>f</i><sub>mix</sub> and the gradient term describe thermodynamic demixing and domain formation; <i>M</i>(<i>c</i>, <i>v̄</i>, <i>T</i>) describes vacancy-assisted ionic mobility; <i>f</i><sub>elec</sub> and <i>f</i><sub>elastic</sub> capture potential and strain contributions; <i>f</i><sub>carrier</sub> is the non-equilibrium driver; <i>k</i> selects the irreversible-chemistry channel for state <i>S</i><sub>5</sub> memory. The model is used diagnostically: for each <i>S</i><sub>k</sub> → <i>S</i><sub>k+1</sub> transition, the dominant term is the one that best explains onset position, growth rate, saturation, or residual memory with stated uncertainty.</p>
 <h2>4. Methodology</h2>
 <p>The experimental strategy has four steps. First, samples will be driven into target states by controlled light dose, wavelength, intensity, temperature, and atmosphere. Operando PL hyperspectral imaging will track peak position, red fraction, linewidth, and spatial contrast. KPFM or SPV will be used where possible to detect potential-related precursors.</p>
 <p>Second, once a target <i>S</i><sub>k</sub> is reached, further evolution will be suppressed by low-temperature state preservation. Practical routes include cryostage quenching to 170-100 K, liquid-nitrogen cold-stage transfer near 77 K, and plunge-freeze cryo preparation for TEM-compatible samples when collaboration is available. Locking will be validated by delay series, dark-transfer controls, low-temperature PL, beam-dose tests, and sister-sample replication. A successful lock means that drift during transfer/readout is smaller than state-to-state contrast or is explicitly included as uncertainty.</p>
@@ -134,9 +143,9 @@ a { color: #111; text-decoration: none; }
 <td>composition, mixing, gradient terms</td>
 </tr>
 <tr>
-<td><i>v</i></td>
-<td>admittance, DLTS, TRPL, hysteresis proxy</td>
-<td>mobility modifier <i>M</i>(<i>c</i>, <i>v</i>, <i>T</i>)</td>
+<td><i>v̄</i> (scalar)</td>
+<td>admittance/impedance (primary), DLTS / TRPL / hysteresis (secondary, calibration only)</td>
+<td>mobility modifier <i>M</i>(<i>c</i>, <i>v̄</i>, <i>T</i>)</td>
 </tr>
 <tr>
 <td>φ</td>
@@ -168,24 +177,24 @@ a { color: #111; text-decoration: none; }
 <tbody>
 <tr>
 <td>Year 1</td>
-<td>Fabricate baseline wide-bandgap mixed-halide films and device-like stacks; build fiducial ROI samples; establish operando PL and KPFM/SPV protocols; define preliminary <i>S</i><sub>0</sub>-<i>S</i><sub>5</sub> triggers; develop 170-100 K and 77 K locking protocols.</td>
-<td>Locking fidelity is quantified, and transfer/readout drift is smaller than state contrast or reported as uncertainty.</td>
+<td>4-point composition pre-screen (Cs<sub>x</sub>FA<sub>1-x</sub>Pb(I<sub>1-y</sub>Br<sub>y</sub>)<sub>3</sub>, <i>y</i> ∈ {0.20, 0.27, 0.33, 0.40}) by operando PL to select one baseline composition; build fiducial-marked thin films on glass; establish operando PL hyperspectral protocol + one non-optical channel (KPFM <strong>or</strong> impedance for <i>v̄</i>); develop single cryogenic locking protocol (170 K cryostage) with a quench-time vs ionic-diffusion-time (Damköhler) validation; lock numerical thresholds for <i>S</i><sub>0</sub>, <i>S</i><sub>2</sub>, <i>S</i><sub>4</sub> from baseline statistics. (77 K plunge-freeze and device-like stacks deferred to Year 2.)</td>
+<td>Locking fidelity is quantified by a Damköhler-number argument (cooling time ≪ fastest mode); transfer/readout drift is smaller than state contrast or reported as uncertainty; quantitative <i>S</i><sub>k</sub> trigger table published.</td>
 </tr>
 <tr>
 <td>Year 2</td>
-<td>Read locked states by PL/KPFM or SPV, XPS/SIMS, and GIWAXS/Raman; correlate same-ROI or fiducial-matched optical, chemical, potential, and strain signatures; validate selected states by cryogenic microscopy if available.</td>
-<td>At least two independent endpoint channels correlate with state labels; Paper 1 on state-locked decoupling is submitted.</td>
+<td>Extend trigger table to <i>S</i><sub>1</sub>, <i>S</i><sub>3</sub>, <i>S</i><sub>5</sub>; add scale-tagged endpoint channels (XPS/SIMS chemical; GIWAXS/Raman structural); correlate fiducial-matched ROI-statistics across optical, chemical, and structural channels; introduce 77 K plunge-freeze for selected states with collaborators if available; build mini-devices on the baseline composition to track quasi-Fermi-level splitting (QFLS) / <i>V</i><sub>oc</sub> retention as a PV-relevant bridge metric.</td>
+<td>At least two independent endpoint channels correlate with state labels at &gt; 2σ; QFLS retention is reported per state; Paper 1 (state-locked decoupling) submitted.</td>
 </tr>
 <tr>
 <td>Year 3</td>
-<td>Analyze <i>S</i><sub>4</sub> → <i>S</i><sub>5</sub> recovery and memory; compare measured <i>Z</i>(<i>S</i><sub>k</sub>) changes with the model terms; construct a mechanism regime diagram for onset, growth, saturation, and recovery.</td>
-<td>The model explains the data better than a PL-only description, or the state boundaries are revised; Paper 2 and thesis chapters are completed.</td>
+<td>Analyze <i>S</i><sub>4</sub> → <i>S</i><sub>5</sub> recovery and memory; fit measured <i>Z</i>(<i>S</i><sub>k</sub>) changes against Eq. (5) terms; construct a <strong>transition-term map</strong> for onset / growth / saturation / recovery on the baseline composition (regime-diagram-style extension across <i>y</i> only if Year 2 yields tight error bars).</td>
+<td>The model improves on a PL-only kinetic description against a pre-registered metric, or the state boundaries are revised; Paper 2 and thesis chapters completed.</td>
 </tr>
 </tbody>
 </table>
 <h2>6. Expected Outcomes, Originality, and Risk Management</h2>
 <p>The expected outcomes are: (1) reproducible operational definitions for <i>S</i><sub>0</sub>-<i>S</i><sub>5</sub>; (2) a transferable write-lock-read-map protocol; (3) a state-resolved mechanism map assigning dominant physical terms to transitions; and (4) two publication-ready datasets, one focused on state-locked decoupling and one on the mechanism regime diagram.</p>
-<p>The originality lies in three aspects. First, the project treats phase segregation as a state-resolved physical process rather than a PL red-shift alone. Second, locking is triggered by physical state criteria rather than arbitrary illumination time. Third, the model explicitly separates conserved composition evolution from proxy variables and irreversible memory, avoiding overclaiming complete microscopic inversion.</p>
+<p>The originality lies in three aspects. First, the project treats phase segregation as a state-resolved physical process rather than a PL red-shift alone. Second, locking is triggered by physical state criteria rather than arbitrary illumination time. Third, the model explicitly separates conserved composition evolution from sample-averaged ionic-conductivity, proxy variables, and irreversible memory, avoiding overclaiming complete microscopic inversion. The term <strong>"decoupling"</strong> in this proposal denotes the experimental and modelling separation of (i) <strong>reversible optical readout (PL, KPFM)</strong> from (ii) <strong>irreversible chemical / structural memory (the auxiliary field <i>q</i>(<b>r</b>) tracked by XPS, SIMS, PbI<sub>2</sub>-XRD)</strong>, anchored at each locked state.</p>
 <p>The main risks and fallback strategies are:</p>
 <table>
 <thead>
@@ -197,11 +206,15 @@ a { color: #111; text-decoration: none; }
 <tbody>
 <tr>
 <td>State locking is imperfect</td>
-<td>quantify drift and include it as uncertainty</td>
+<td>quantify drift via Damköhler-number test and include residual as uncertainty</td>
 </tr>
 <tr>
-<td>Same-ROI registration fails</td>
-<td>use fiducial matched regions and ROI-level statistics</td>
+<td>Cooling-induced artifacts (thermal contraction, low-T PL line-shape, exciton-polaron renormalisation)</td>
+<td>report low-T endpoints with a paired unilluminated cooled-only control sample to subtract baseline shifts</td>
+</tr>
+<tr>
+<td>Same-statistics ROI registration fails</td>
+<td>fall back to fiducial-matched <strong>statistical</strong> regions (not pixel-level same-ROI) and ROI-level distributions</td>
 </tr>
 <tr>
 <td>KPFM/SPV is surface-sensitive</td>
@@ -221,7 +234,7 @@ a { color: #111; text-decoration: none; }
 </tr>
 </tbody>
 </table>
-<p>Overall, the project is designed to remain falsifiable: if a channel fails, the framework is reduced to validated variables; if the six-state model is wrong, the state definition is revised; if locking is imperfect, the uncertainty becomes part of the result.</p>
+<p>Overall, the project is designed to remain falsifiable. A <strong>hard failure condition</strong> is committed in advance: if, by the end of Year 2, no non-PL endpoint channel correlates with the PL-defined state labels at &gt; 2σ across replicates, the state-locked premise is abandoned and the work reverts to a kinetic-PL-only framework. Beyond this, soft failures are absorbed by uncertainty: if a channel fails, the framework is reduced to validated variables; if the six-state model is wrong, the state definition is revised; if locking is imperfect, the uncertainty becomes part of the result.</p>
 <h2>References</h2>
 <ol>
 <li>Hoke, E. T.; Slotcavage, D. J.; Dohner, E. R.; Bowring, A. R.; Karunadasa, H. I.; McGehee, M. D. Reversible Photo-Induced Trap Formation in Mixed-Halide Hybrid Perovskites for Photovoltaics. <em>Chemical Science</em> <strong>2015</strong>, 6, 613-617.</li>
@@ -234,6 +247,5 @@ a { color: #111; text-decoration: none; }
 <li>Nie, T.; Fang, Z.; Ren, X.; Duan, Y.; Liu, S. Recent Advances in Wide-Bandgap Organic-Inorganic Halide Perovskite Solar Cells and Tandem Application. <em>Nano-Micro Letters</em> <strong>2023</strong>, 15, 70.</li>
 <li>Cahn, J. W.; Hilliard, J. E. Free Energy of a Nonuniform System. I. Interfacial Free Energy. <em>Journal of Chemical Physics</em> <strong>1958</strong>, 28, 258-267.</li>
 </ol>
-
 </body>
 </html>
